@@ -321,14 +321,20 @@
             font-weight: 600;
         }
 
+        .authority-block-text {
+            border-left: 3px solid var(--ink-charcoal);
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
         .authority-block p {
             font-family: var(--font-body);
             font-size: 1.25rem;
             line-height: 1.6;
             color: rgba(26, 26, 26, 0.9);
-            margin-bottom: 2rem;
-            border-left: 3px solid var(--ink-charcoal);
-            padding-left: 1.5rem;
+            margin-bottom: 0;
+        }
+        .authority-block p:not(:last-of-type) {
+            margin-bottom: 1rem;
         }
 
         .benefits-list {
@@ -946,8 +952,8 @@
             <div class="pain-grid">
                 
                 <div class="pain-card">
-                    <img src="icon-exhaustion.png" alt="Algorithm Exhaustion" class="pain-icon">
-                    <h3>Algorithm Exhaustion</h3>
+                    <img src="icon-exhaustion.png" alt="Algorithm Fatigue" class="pain-icon">
+                    <h3>Algorithm Fatigue</h3>
                     <p>
                         Instagram worked. Then it didn't. You're posting more, reaching fewer people, and the platform owns your audience.
                     </p>
@@ -993,9 +999,14 @@
             
             <div class="authority-block">
                 <h2>We help you make the transition without the overwhelm.</h2>
-                <p>
-                    With 20+ years in broadcast marketing and editorial, we've built audience strategies for major content brands. Now we help individual creators apply that same strategic thinking to build sustainable, owned platforms.
-                </p>
+                <div class="authority-block-text">
+                    <p>
+                        With 20+ years in broadcast marketing and editorial, we've built audience strategies for major content brands. Now we help individual creators apply that same strategic thinking to build sustainable, owned platforms.
+                    </p>
+                    <p>
+                        Flat-fee or revenue-share models available.
+                    </p>
+                </div>
                 <a href="mailto:charlie@redslashstudio.com" class="btn-tactile">Get in Touch</a>
             </div>
 
@@ -1046,7 +1057,7 @@
             <div class="team-header">
                 <h2>Your own dedicated team.</h2>
                 <p class="intro-text">
-                    I help you harness the power of AI to create content faster—without losing your voice or expertise. Think of it as having a small team working for you:
+                    We help you harness the power of AI to create content faster—without losing your voice or expertise. Think of it as having a small team working for you:
                 </p>
             </div>
 
