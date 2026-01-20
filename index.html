@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Red Slash Studio</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,11 +58,13 @@
             justify-content: space-between;
             align-items: center;
             padding: 1.75rem 3rem; 
-            background: rgba(253, 251, 247, 0.85); 
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            z-index: 1000; 
-            border-bottom: 1px solid rgba(26, 26, 26, 0.05); 
+            background: rgba(253, 251, 247, 0.95); 
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 10000; 
+            border-bottom: 1px solid rgba(26, 26, 26, 0.05);
+            /* Ensure header stays above all content */
+            isolation: isolate;
         }
 
         .logo {
@@ -489,7 +491,11 @@
                 justify-content: space-between;
                 align-items: center;
                 gap: 1rem; 
-                padding: 1.25rem 1.5rem; 
+                padding: 1.25rem 1.5rem;
+                padding-top: max(1.25rem, env(safe-area-inset-top));
+                background: rgba(253, 251, 247, 0.98);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
             }
             
             .logo {
